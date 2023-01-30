@@ -227,6 +227,48 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.left-96 {
+  left: 24rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -244,12 +286,24 @@ img, video {
   margin-right: 1.25rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .ml-12 {
   margin-left: 3rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -264,8 +318,8 @@ img, video {
   max-width: 56rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .cursor-pointer {
@@ -274,10 +328,6 @@ img, video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-between {
@@ -364,6 +414,11 @@ img, video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-normal {
@@ -468,57 +523,33 @@ body {
   line-height: 80px;
 }
 
-.title-anim:before {
-  content: "financial models";
-  animation-name: change;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: webkit-change;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
+#container {
+  text-align: center;
 }
 
-@keyframes change {
-  0% {
-    content: "financial models";
-    display: block;
+#text {
+  vertical-align: middle;
+  color: #d1d1d1;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+#cursor {
+  vertical-align: middle;
+  width: 3px;
+  height: 50px;
+  background-color: #92995c;
+  animation: .75s step-end infinite blink;
+  display: inline-block;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: #0000;
   }
 
   50% {
-    content: "business plans";
-    display: block;
-  }
-
-  75% {
-    content: "pitch decks";
-    display: block;
-  }
-
-  100% {
-    content: "market research";
-    display: block;
-  }
-}
-
-@keyframes webkit-change {
-  0% {
-    content: "financial models";
-    display: block;
-  }
-
-  50% {
-    content: "business plans";
-    display: block;
-  }
-
-  75% {
-    content: "pitch decks";
-    display: block;
-  }
-
-  100% {
-    content: "market research";
-    display: block;
+    background-color: #92995c;
   }
 }
 

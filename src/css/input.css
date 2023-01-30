@@ -90,53 +90,32 @@ body {
   line-height: 80px;
 }
 
-.title-anim:before {
-  content: "financial models";
-  animation-name: change;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  -webkit-animation-name: webkit-change;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 3s;
+#container {
+  text-align: center;
 }
 
-@keyframes change {
-  0% {
-    display: block;
-    content: "financial models";
-  }
-  50% {
-    display: block;
-    content: "business plans";
-  }
-
-  75% {
-    display: block;
-    content: "pitch decks";
-  }
-
-  100% {
-    display: block;
-    content: "market research";
-  }
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #d1d1d1;
+  letter-spacing: 2px;
 }
 
-@keyframes webkit-change {
-  0% {
-    display: block;
-    content: "financial models";
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 50px;
+  background-color: #92995c;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
   }
   50% {
-    display: block;
-    content: "business plans";
-  }
-
-  75% {
-    display: block;
-    content: "pitch decks";
-  }
-  100% {
-    display: block;
-    content: "market research";
+    background-color: #92995c;
   }
 }
