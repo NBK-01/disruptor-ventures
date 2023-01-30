@@ -1,7 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background: radial-gradient(
+    80.83% 159.85% at 1.67% 129.83%,
+    #30331f 0%,
+    #1e1e1e 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--hyperion {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(93.53deg, #1e1e1e -22.04%, #30331f 97.92%);
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.button--hyperion span {
+  display: block;
+  position: relative;
+}
+
+.button--hyperion > span {
+  overflow: hidden;
+}
+
+.button--hyperion > span > span {
+  overflow: hidden;
+}
+
+.button--hyperion:hover > span > span {
+  animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
+}
+
+@keyframes MoveUpInitial {
+  to {
+    transform: translate3d(0, -105%, 0);
+  }
+}
+
+@keyframes MoveUpEnd {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.button--hyperion::before {
+  content: "";
+  background: #fff;
+  color: #000;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transform-origin: 100% 50%;
+}
+
+.button--hyperion:hover::before {
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0% 50%;
+}
+
+.large-title {
+  line-height: 80px;
+}
+
+.title-anim:before {
+  content: "financial models";
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  -webkit-animation-name: webkit-change;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+}
+
+@keyframes change {
+  0% {
+    display: block;
+    content: "financial models";
+  }
+  50% {
+    display: block;
+    content: "business plans";
+  }
+
+  75% {
+    display: block;
+    content: "pitch decks";
+  }
+
+  100% {
+    display: block;
+    content: "market research";
+  }
+}
+
+@keyframes webkit-change {
+  0% {
+    display: block;
+    content: "financial models";
+  }
+  50% {
+    display: block;
+    content: "business plans";
+  }
+
+  75% {
+    display: block;
+    content: "pitch decks";
+  }
+  100% {
+    display: block;
+    content: "market research";
+  }
 }
