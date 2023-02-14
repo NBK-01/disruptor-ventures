@@ -571,7 +571,7 @@ tl.to(".copy1", {
 tl.to(".anim1", {
     y: "-100%",
     duration: 1.5,
-    delay: 3
+    delay: 2
 });
 tl.to(".trans1", {
     y: "-100%",
