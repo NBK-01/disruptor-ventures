@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/*.html",
+    "tailwind-start": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "gsap": "^3.11.4",
+    "imagesloaded": "^5.0.0",
     "three": "^0.148.0"
   }
 }

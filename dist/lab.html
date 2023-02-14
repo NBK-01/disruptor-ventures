@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unreveal Effects for Content Previews | Demo 3 | Codrops</title>
+    <meta name="description" content="Some explorations of page transitions using covering elements and CSS clip-paths.">
+    <meta name="keywords" content="page transition, css, javascript, effect, animation">
+    <meta name="author" content="Codrops">
+    <link rel="stylesheet" type="text/css" href="/index.4110e2cc.css">
+    <link rel="stylesheet" type="text/css" href="/lab.49742217.css">
+  </head>
+  <body class="demo-3 loading">
+    <nav>
+      <div class="max-w-screen-2xl mx-auto px-6 pt-10 pb-3">
+        <div class="flex justify-between">
+          <div class="flex items-center">
+            <div class="ml-5 mx-auto items-center">
+              <a class="py-2 px-4 bg-white bg-opacity-30 rounded-3xl cursor-pointer mr-4">
+                <span class="font-Main font-normal text-sm text-white">
+                  Laboratory
+                </span>
+              </a>
+              <a class="py-2 px-6 bg-white bg-opacity-30 rounded-3xl cursor-pointer">
+                <span class="font-Main font-normal text-sm text-white">
+                  About us
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="items-center mx-auto">
+            <div class="flex items-center">
+              <a class="pointer" href="/index.html">
+                <h1 class="text-xl font-bold text-white font-Main">
+                  Disruptor Ventures
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="flex">
+            <button class="button button--hyperion px-4 py-3 mr-5 before:bg-dv-dark border-white border rounded-md">
+              <span><span class="font-Main font-normal text-base text-white">
+                  Join the lab
+                </span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="frame">
+        <div class="frame__title">
+          <h1 class="frame__title-main">Unreveal Effects</h1>
+        </div>
+      </div>
+      <div class="content">
+        <figure class="content__item">
+          <h2 class="content__item-title oh text-left font-Main text-dv-white pb-1 pl-2 text-base">
+            <span class="oh__inner">
+              Probably; Startups / Ventures <br>
+              <span class="text-sm text-dv-green"> MVP - 2022 </span>
+            </span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="background-image: url(&quot;prbly-logo.7493aaf9.png&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption text-sm font-Sub text-left text-dv-white pl-2">
+            A startup place where founders can share their startup ideas and
+            connect with investors.
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh text-left font-Main text-dv-white pb-1 pl-2 text-base">
+            <span class="oh__inner">Mirathi; Blockchain / Trust Plans <br>
+              <span class="text-sm text-dv-green"> In development - 2021</span>
+            </span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="background-image: url(&quot;mirathi-logo.0084411c.png&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption text-sm font-Sub text-left text-dv-white pl-2">
+            Decentralized trust plans for cryptocurrencies.
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh text-left font-Main text-dv-white pb-1 pl-2 text-base">
+            <span class="oh__inner">
+              Cryptomena; Job board / Blockchain <br>
+              <span class="text-sm text-dv-green">
+                Rebranded - 2020
+              </span></span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="background-image: url(&quot;cryptomena-logo.2966f231.png&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption text-sm font-Sub text-left text-dv-white pl-2">
+            A job board that specializes in the crypto and blockchain industry
+            in the MENA region
+          </figcaption>
+        </figure>
+        <figure class="content__item">
+          <h2 class="content__item-title oh text-left font-Main text-dv-white pb-1 pl-2 text-base">
+            <span class="oh__inner">
+              Pulz; Marketplace / Music <br>
+              <span class="text-dv-green text-sm"> Closed - 2020 </span>
+            </span>
+          </h2>
+          <div class="content__item-img-wrap">
+            <div class="content__item-img" style="background-image: url(&quot;pulz-logo.737f52db.png&quot;)"></div>
+          </div>
+          <figcaption class="content__item-caption text-sm font-Sub text-left text-dv-white pl-2">
+            Middle East's musician marketplace for hiring talents in the music
+            industry
+          </figcaption>
+        </figure>
+        <div class="content__overlay"></div>
+      </div>
+      <div class="preview">
+        <div class="preview__item">
+          <div class="preview__item-img-outer"></div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">Bright</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Magic Leaf</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">2003</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              At the violet hour, when the eyes and back turn upward from the
+              desk, when the human engine waits.
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              April is the cruellest month, breeding lilacs out of the dead
+              land, mixing memory and desire, stirring dull roots with spring
+              rain.
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer"></div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">Holy</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Full Heart</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">2007</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              Madame sosostris, famous clairvoyante, had a bad cold,
+              nevertheless is known to be the wisest woman in europe.
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              Winter kept us warm, covering earth in forgetful snow, feeding a
+              little life with dried tubers.
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer"></div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">Stout</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Restless</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">2010</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              The chair she sat in, like a burnished throne, glowed on the
+              marble, where the glass.
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              Doubled the flames of sevenbranched candelabra reflecting light
+              upon the table as the glitter of her jewels rose to meet it.
+            </p>
+          </div>
+        </div>
+        <div class="preview__item">
+          <div class="preview__item-img-outer"></div>
+          <h2 class="preview__item-title oh">
+            <span class="oh__inner">Fervid</span>
+          </h2>
+          <h3 class="preview__item-subtitle oh">
+            <span class="oh__inner">Soft Skin</span>
+          </h3>
+          <span class="preview__item-meta oh"><span class="oh__inner">2021</span></span>
+          <div class="preview__item-box preview__item-box--left">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Setting</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              From satin cases poured in rich profusion; in vials of ivory and
+              coloured glass.
+            </p>
+          </div>
+          <div class="preview__item-box preview__item-box--right">
+            <h3 class="preview__item-box-title oh">
+              <span class="oh__inner">Location</span>
+            </h3>
+            <p class="preview__item-box-desc">
+              Huge sea-wood fed with copper burned green and orange, framed by
+              the coloured stone, in which sad light a carvéd dolphin swam.
+            </p>
+          </div>
+        </div>
+        <button class="unbutton preview__back" aria-label="Back to content">
+          <svg width="200px" height="36px" viewbox="0 0 50 9">
+            <path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path>
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script src="/lab.de0cd22e.js" defer=""></script>
+  </body>
+</html>
