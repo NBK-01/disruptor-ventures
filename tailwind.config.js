@@ -11,6 +11,7 @@ module.exports = {
         "dv-green": "#92995C",
         "dv-dark": "#1E1E1E",
         "dv-white": "#d1d1d1",
+        "dv-green-dark": "#30331f",
       },
     },
   },

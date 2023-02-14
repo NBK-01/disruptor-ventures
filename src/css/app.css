@@ -61,8 +61,6 @@ main {
 }
 
 .frame {
-  color: var(--color-title);
-  padding: var(--page-padding);
   position: relative;
   grid-gap: 0.5rem;
   z-index: 2;
