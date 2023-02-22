@@ -227,8 +227,32 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
+}
+
+.left-80 {
+  left: 20rem;
+}
+
+.bottom-64 {
+  bottom: 16rem;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
 }
 
 .mx-auto {
@@ -280,6 +304,10 @@ img, video {
   display: grid;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .max-w-screen-2xl {
   max-width: 1536px;
 }
@@ -296,12 +324,24 @@ img, video {
   resize: both;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
 }
 
 .rounded-3xl {
@@ -316,9 +356,18 @@ img, video {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-dv-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(146 153 92 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -326,18 +375,25 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-dv-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
-}
-
 .bg-dv-green-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(48 51 31 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: #0000;
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: .1;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.p-3 {
+  padding: .75rem;
 }
 
 .px-6 {
@@ -366,6 +422,18 @@ img, video {
 
 .pb-3 {
   padding-bottom: .75rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pb-1 {
@@ -417,9 +485,19 @@ img, video {
   line-height: 1;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-normal {
@@ -571,9 +649,10 @@ html {
 
 .sub-text {
   width: 650px;
-  position: absolute;
-  top: 700px;
-  left: 800px;
+  margin: 65px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 .trans1 {
@@ -618,6 +697,11 @@ html {
 
 .hover\:bg-opacity-30:hover {
   --tw-bg-opacity: .3;
+}
+
+.focus\:outline-none:focus {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
 }
 
 /*# sourceMappingURL=index.4110e2cc.css.map */

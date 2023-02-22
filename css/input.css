@@ -119,10 +119,11 @@ html {
 }
 
 .sub-text {
-  position: absolute;
-  top: 700px;
+  position: fixed;
+  bottom: 0px;
   width: 650px;
-  left: 800px;
+  right: 0px;
+  margin: 65px;
 }
 
 .trans1 {
