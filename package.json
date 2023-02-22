@@ -7,7 +7,7 @@
     "start": "parcel lab.html",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build index.html --no-content-hash --no-source-maps --public-url ./",
-    "build": "npm run clean && npm run tailwind-start && npm run build:parcel",
+    "build": "npm run clean && npm run tailwind-start",
     "tailwind-start": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
   },
   "author": "",
