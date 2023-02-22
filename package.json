@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel lab.html",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build index.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run tailwind-start && npm run build:parcel",

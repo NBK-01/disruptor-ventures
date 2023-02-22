@@ -3,6 +3,11 @@
 /.pnp
 .pnp.js
 
+# Parcel related files
+.cache/
+.parcel-cache/
+dist/
+
 # testing
 /coverage
 
@@ -30,3 +35,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+

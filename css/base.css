@@ -90,7 +90,7 @@ a:focus {
 }
 
 canvas {
-	display: block;
+	display: flex;
 }
 
 .frame {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Disruptor Ventures: From Possibility to reality</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
   </head>
   <body class="demo-ico loading">
     <nav>
@@ -52,26 +53,76 @@
       </div>
     </nav>
 
-    <div class="max-w-4xl flex mt-14 ml-12">
-      <h1 class="text-6xl font-Main font-bold text-dv-green large-title">
-        We help you work on <br />
-        your
-        <span id="container-type">
-          <span id="text"> </span> <span id="cursor"> </span>
-        </span>
-      </h1>
+    <div id="container"></div>
+    <div class="frame">
+      <div class="max-w-4xl flex mt-14 ml-12">
+        <h1 class="text-6xl font-Main font-bold text-dv-green large-title">
+          We help you work on <br />
+          your
+          <span id="container-type">
+            <span id="text"> </span> <span id="cursor"> </span>
+          </span>
+        </h1>
+      </div>
+  
+      <div class="sub-text">
+        <p class="text-dv-white font-Sub text-base font-normal">
+          We’re the idea stage startup facilitator where entrepreneurs can submit
+          their startup ideas and exponentially accelerate their journey from
+          <span class="text-dv-green font-bold"> idea stage </span> to
+          <span class="text-dv-green font-bold"> reality </span>.
+        </p>
+      </div>
     </div>
+    <!-- /frame -->
+  </main>
+  <script src="utils/ico.js"></script>
+  <script>
+    let animation = new explosion.default(
+      "container", // id of DOM el
+      {
+        surface: "ffffff",
+        inside: "92995C",
+        background: "151616",
+        onLoad: () => {
+          document.body.classList.remove("loading");
+        },
+      }
+    );
 
-    <div class="sub-text">
-      <p class="text-dv-white font-Sub text-base font-normal">
-        We’re the idea stage startup facilitator where entrepreneurs can submit
-        their startup ideas and exponentially accelerate their journey from
-        <span class="text-dv-green font-bold"> idea stage </span> to
-        <span class="text-dv-green font-bold"> reality </span>.
-      </p>
-    </div>
+    let targetMouseX = 0,
+      mouseX = 0,
+      ta = 0;
+    const sign = function (n) {
+      return n === 0 ? 1 : n / Math.abs(n);
+    };
+    document.addEventListener("mousemove", (e) => {
+      targetMouseX =
+        (2 * (e.clientX - animation.width / 2)) / animation.width;
+    });
 
-    <div class="trans1">
+    document.addEventListener("touchmove", (e) => {
+      targetMouseX = (e.touches[0].clientX / animation.width) * 2 - 1;
+    });
+
+    function draw() {
+      if (animation) {
+        mouseX += (targetMouseX - mouseX) * 0.05;
+        ta = Math.abs(mouseX);
+        animation.settings.progress = ta;
+        animation.scene.rotation.y =
+          Math.PI / 2 - ta * (2 - ta) * Math.PI * sign(mouseX);
+        animation.scene.rotation.z =
+          Math.PI / 2 - ta * (2 - ta) * Math.PI * sign(mouseX);
+      }
+      window.requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+    
+    
+
+    <!-- <div class="trans1">
       <div class="trans-copy1">
         <h1 class="hidden1 flex flex-col">
           <span
@@ -95,7 +146,7 @@
       </div>
     </div>
 
-    <div class="anim1 bg-dv-green-dark"></div>
+    <div class="anim1 bg-dv-green-dark"></div> -->
 
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/trans.js"></script>
