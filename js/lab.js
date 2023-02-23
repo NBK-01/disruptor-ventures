@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { gsap } from "gsap"
 import { preloadImages } from "./utils";
-import { ContentItem } from "./contentItem";
-import { PreviewItem } from "./previewItem";
+import { ContentItem } from "./contentitem";
+import { PreviewItem } from "./previewitem";
 import { Flip } from "gsap/Flip";
 gsap.registerPlugin(Flip);
 
