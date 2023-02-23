@@ -8,7 +8,7 @@
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build lab.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run tailwind-start && npm run build:parcel",
-    "tailwind-start": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
+    "tailwind-start": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
