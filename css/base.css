@@ -91,13 +91,14 @@ a:focus {
 
 canvas {
 	display: flex;
+	position: absolute;
 }
 
 .frame {
-	padding: 3rem 5vw;
+	
 	text-align: center;
 	position: relative;
-	z-index: 1000;
+	z-index: -1000;
 }
 
 .demo-1 .frame,

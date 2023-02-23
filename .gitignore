@@ -6,7 +6,9 @@
 # Parcel related files
 .cache/
 .parcel-cache/
-dist/
+
+.cache
+.parcel-cache
 
 # testing
 /coverage

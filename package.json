@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel lab.html",
+    "start": "parcel *.html",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build index.html --no-content-hash --no-source-maps --public-url ./",
-    "build": "npm run clean && npm run tailwind-start",
+    "build:parcel": "parcel build *.html --no-content-hash --no-source-maps --public-url ./",
+    "build": "npm run build:parcel",
     "tailwind-start": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
   },
   "author": "",

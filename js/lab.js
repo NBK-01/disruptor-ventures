@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { gsap } from "gsap"
 import { preloadImages } from "./utils";
 import { ContentItem } from "./contentItem";
 import { PreviewItem } from "./previewItem";
