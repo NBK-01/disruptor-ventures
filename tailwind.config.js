@@ -8,10 +8,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        "dv-green": "#92995C",
+        "dv-green": "#2D9F6C",
         "dv-dark": "#1E1E1E",
         "dv-white": "#d1d1d1",
-        "dv-green-dark": "#30331f",
+        "dv-green-dark": "#0D3020",
       },
     },
   },
