@@ -39,19 +39,19 @@ class ScrollStage {
       // vertex
       uFrequency: {
         start: 0,
-        end: 4
+        end: 1
       },
       uAmplitude: {
-        start: 4,
-        end: 4
+        start: 2,
+        end: 1
       },
       uDensity: {
         start: 1,
-        end: 1
+        end: 0
       },
       uStrength: {
         start: 0,
-        end: 1.1
+        end: 1
       },
       // fragment
       uDeepPurple: {  // max 1
@@ -60,7 +60,7 @@ class ScrollStage {
       },
       uOpacity: {  // max 1
         start: .1,
-        end: .66
+        end: .2
       }
     }
 
@@ -199,8 +199,8 @@ class ScrollStage {
     // play with it!
     // enable / disable / change x, y, multiplier …
 
-    this.mouse.x = (event.clientX / this.viewport.width).toFixed(2) * 4
-    this.mouse.y = (event.clientY / this.viewport.height).toFixed(2) * 2
+    this.mouse.x = (event.clientX / this.viewport.width).toFixed(2) * 1
+    this.mouse.y = (event.clientY / this.viewport.height).toFixed(2) * 1
 
     GSAP.to(this.mesh.material.uniforms.uFrequency, { value: this.mouse.x })
     GSAP.to(this.mesh.material.uniforms.uAmplitude, { value: this.mouse.x })
@@ -265,4 +265,3 @@ class ScrollStage {
 
 new ScrollStage()
 
-console.log('%c Made by ꜰᴀʙᴏᴏʟᴇᴀ → https://twitter.com/faboolea', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;')

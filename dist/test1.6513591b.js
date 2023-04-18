@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"GLqhi":[function(require,module,exports) {
+})({"3ZRRf":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "398d71030bdcb3bc";
+module.bundle.HMR_BUNDLE_ID = "2d67ee886513591b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -4562,6 +4562,6 @@ var CSSPlugin = {
 });
 (0, _gsapCoreJs.gsap).registerPlugin(CSSPlugin);
 
-},{"./gsap-core.js":"05eeC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["GLqhi"], null, "parcelRequire0e38")
+},{"./gsap-core.js":"05eeC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["3ZRRf"], null, "parcelRequire0e38")
 
-//# sourceMappingURL=test.0bdcb3bc.js.map
+//# sourceMappingURL=test1.6513591b.js.map

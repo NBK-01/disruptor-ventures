@@ -778,7 +778,7 @@ backCtrl.addEventListener("click", ()=>{
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "preloadImages", ()=>preloadImages);
-const imagesLoaded = require("f1fe3cf8bc91986e");
+const imagesLoaded = require("b8d354a27d0f5104");
 /**
  * Preload images
  * @param {String} selector - Selector/scope from where images need to be preloaded. Default is 'img'
@@ -790,7 +790,7 @@ const imagesLoaded = require("f1fe3cf8bc91986e");
     });
 };
 
-},{"f1fe3cf8bc91986e":"aYzyZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aYzyZ":[function(require,module,exports) {
+},{"b8d354a27d0f5104":"aYzyZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aYzyZ":[function(require,module,exports) {
 /*!
  * imagesLoaded v5.0.0
  * JavaScript is all like "You images are done yet or what?"
@@ -798,7 +798,7 @@ const imagesLoaded = require("f1fe3cf8bc91986e");
  */ (function(window1, factory) {
     // universal module definition
     if (0, module.exports) // CommonJS
-    module.exports = factory(window1, require("5f95d9ffec6c0a7a"));
+    module.exports = factory(window1, require("a0f9df65de370305"));
     else // browser global
     window1.imagesLoaded = factory(window1, window1.EvEmitter);
 })(typeof window !== "undefined" ? window : this, function factory(window1, EvEmitter) {
@@ -1059,7 +1059,7 @@ const imagesLoaded = require("f1fe3cf8bc91986e");
     return ImagesLoaded;
 });
 
-},{"5f95d9ffec6c0a7a":"7rCHo"}],"7rCHo":[function(require,module,exports) {
+},{"a0f9df65de370305":"7rCHo"}],"7rCHo":[function(require,module,exports) {
 /**
  * EvEmitter v2.1.1
  * Lil' event emitter
