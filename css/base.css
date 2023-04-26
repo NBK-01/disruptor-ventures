@@ -86,7 +86,7 @@ body {
 	height: calc(100vh - 13rem);
 }
 
-@media screen and (min-width: 53em) {
+
 	.frame {
 		position: fixed;
 		text-align: left;
@@ -114,17 +114,7 @@ body {
 	.frame__title {
 		margin: 0;
 	}
-	.frame__tagline {
-		position: relative;
-		margin: 0 0 0 1rem;
-		padding: 0 0 0 1rem;
-		opacity: 0.5;
-	}
-	.frame__demos {
-		margin: 0;
-		grid-area: demos;
-		justify-self: end;
-	}
+	
 	.frame__links {
 		grid-area: links;
 		
@@ -136,7 +126,7 @@ body {
 	.content {
 		height: 100vh;
 	}
-}
+
 
 
 .link {

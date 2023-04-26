@@ -71,61 +71,46 @@ body {
   height: calc(100vh - 13rem);
 }
 
-@media screen and (min-width: 53em) {
-  .frame {
-    text-align: left;
-    z-index: 100;
-    width: 100%;
-    max-width: none;
-    height: 100vh;
-    pointer-events: none;
-    grid-template: "title links"
-                   ". ."
-                   ". demos"
-                   / 66% 34%;
-    align-content: space-between;
-    padding: 1.75rem;
-    display: grid;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+.frame {
+  text-align: left;
+  z-index: 100;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  pointer-events: none;
+  grid-template: "title links"
+                 ". ."
+                 ". demos"
+                 / 66% 34%;
+  align-content: space-between;
+  padding: 1.75rem;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-  .frame__title-wrap {
-    grid-area: title;
-    align-self: center;
-    display: flex;
-  }
+.frame__title-wrap {
+  grid-area: title;
+  align-self: center;
+  display: flex;
+}
 
-  .frame__title {
-    margin: 0;
-  }
+.frame__title {
+  margin: 0;
+}
 
-  .frame__tagline {
-    opacity: .5;
-    margin: 0 0 0 1rem;
-    padding: 0 0 0 1rem;
-    position: relative;
-  }
+.frame__links {
+  grid-area: links;
+  justify-self: end;
+}
 
-  .frame__demos {
-    grid-area: demos;
-    justify-self: end;
-    margin: 0;
-  }
+.frame a {
+  pointer-events: auto;
+}
 
-  .frame__links {
-    grid-area: links;
-    justify-self: end;
-  }
-
-  .frame a {
-    pointer-events: auto;
-  }
-
-  .content {
-    height: 100vh;
-  }
+.content {
+  height: 100vh;
 }
 
 .link {
