@@ -1,0 +1,122 @@
+.button {
+  position: relative;
+}
+
+.active {
+  cursor: pointer;
+}
+
+.js body {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.js body.render {
+  opacity: 1;
+}
+
+.cursor {
+  display: none;
+}
+
+@media (any-pointer: fine) {
+  .cursor {
+    pointer-events: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .cursor__inner {
+    fill: #2d9f6c;
+    stroke: #fff;
+    stroke-width: 1px;
+  }
+
+  .credits {
+    padding-left: 25vw;
+  }
+}
+
+body {
+  --button-border-radius: 50%;
+  --button-bg: transparent;
+  --button-stroke-1: #5a5456;
+  --button-stroke-2: #5a5456;
+  --button-stroke-width: 1px;
+  --button-text: #fff;
+  --button-bg-hover: transparent;
+  --button-stroke-hover-1: #2d9f6c;
+  --button-stroke-hover-2: #2d9f6c;
+  --button-stroke-width-hover: 1px;
+  --button-text-hover: #fff;
+  --cursor-stroke-width: 1px;
+}
+
+.button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  width: 10rem;
+  height: 10rem;
+  background: none;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+.button:focus, .button--hover {
+  border-color: var(--button-stroke-hover);
+  color: var(--button-text-hover);
+  background: var(--button-bg-hover);
+  outline: none;
+}
+
+.button__deco {
+  width: 100%;
+  height: 100%;
+  border-width: var(--button-stroke-width);
+  border-radius: var(--button-border-radius);
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button__deco--1 {
+  border-color: var(--button-stroke-1);
+}
+
+.button--hover .button__deco--1 {
+  border-color: var(--button-stroke-hover-1);
+}
+
+.button__deco--2 {
+  border-color: var(--button-stroke-2);
+}
+
+.button--hover .button__deco--2 {
+  border-color: var(--button-stroke-hover-2);
+}
+
+.button__text, .button__text-inner {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button__text {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=index.d2a2c8be.css.map */

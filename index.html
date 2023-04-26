@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="./css/shaders-on-scroll.css" />
 		<link rel="stylesheet" type="text/css" href="./css/base.css" />
 		<link rel="stylesheet" href="./css/output.css"/>
+		<link rel="stylesheet" href="/css/button.css"/>
+		<link rel="stylesheet" href="/css/index.css"/>
 		
 	</head>
 	<body >
@@ -53,10 +55,11 @@
 						<section class="section h-screen">
 							<div class="flex">
 								<h1 class="max-w-6xl h-36 text-6xl font-Main font-bold text-dv-white text-center items-center large-title">
-									Interested? <br/> Let's <a data-tf-popup="TPltRM63" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=DV Form" data-tf-transitive-search-params data-tf-medium="snippet" class="underline font-medium text-dv-green cursor-pointer"> Disrupt </a>
-									<script src="//embed.typeform.com/next/embed.js"></script>
+									Interested? <br/> Let's Disrupt
+									
 								  </h1>
 							</div>   
+
 
 							<div class="max-w-lg section__paragraph">
 							<p class="text-dv-white font-Sub text-base font-normal">
@@ -65,8 +68,17 @@
 								<span class="text-dv-green font-bold"> idea stage </span> to
 								<span class="text-dv-green font-bold"> reality </span>.
 							  </p>
+							  <button data-tf-popup="TPltRM63" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=DV Form" data-tf-transitive-search-params data-tf-medium="snippet" class="button">
+								<div class="button__deco button__deco--2"></div>
+								<div class="button__deco button__deco--1"></div>
+								<span class="button__text">
+									<span class="button__text-inner font-Main font-bold"> GO </span>
+								</span>
+							</button>
+							<script src="//embed.typeform.com/next/embed.js"></script>
 							</div>
 						</section>
+						
 						
 					</div>
 
@@ -75,8 +87,13 @@
 				<div class="layout__line"></div>
 				
 			</div>
+			<svg class="cursor" width="35" height="35" viewBox="0 0 25 25">
+				<circle class="cursor__inner" cx="12.5" cy="12.5" r="6.25"/>
+			</svg>
 		</main>
 		<script type="module" src="/js/three-blob/index.js"></script>
 		<script type="module" src="/js/index.js"></script>
+		<script type="module" src="/js/buttons/index.js"></script>
+		
 	</body>
 </html>

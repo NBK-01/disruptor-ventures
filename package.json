@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
+    "events": "^3.3.0",
     "glsl-noise": "^0.0.0",
     "glsl-rotate": "^2.0.0",
     "gsap": "^3.11.4",

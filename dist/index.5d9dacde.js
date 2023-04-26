@@ -562,8 +562,7 @@ var _CONTENT = [
     "financial models",
     "business plans",
     "pitch decks",
-    "market research",
-    "branding"
+    "market research"
 ];
 // Current sentence being processed
 var _PART = 0;
