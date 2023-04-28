@@ -72,7 +72,7 @@ canvas.webgl {
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
-    padding: 100vh 2rem;
+    padding: 1vh 2rem;
   }
 
   .section:first-of-type {

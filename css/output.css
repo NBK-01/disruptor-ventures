@@ -734,8 +734,8 @@ video {
   margin-right: auto;
 }
 
-.mt-44{
-  margin-top: 11rem;
+.mt-0{
+  margin-top: 0px;
 }
 
 .ml-5{
@@ -768,14 +768,6 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .box-border{
@@ -896,14 +888,6 @@ video {
 
 .h-1{
   height: 0.25rem;
-}
-
-.h-2{
-  height: 0.5rem;
-}
-
-.h-auto{
-  height: auto;
 }
 
 .w-96{
@@ -2002,14 +1986,6 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.pb-32{
-  padding-bottom: 8rem;
-}
-
-.pb-96{
-  padding-bottom: 24rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -2074,8 +2050,8 @@ video {
   font-family: Inter, sans-serif;
 }
 
-.text-7xl{
-  font-size: 4.5rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -2087,11 +2063,6 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-3xl{
@@ -2119,17 +2090,8 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold{
   font-weight: 700;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .font-normal{
@@ -2621,18 +2583,6 @@ video {
     }
   }
 
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:h-10{
-    height: 2.5rem;
-  }
-
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
   .sm\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -2659,18 +2609,6 @@ video {
 @media (min-width: 1280px){
   .xl\:mt-44{
     margin-top: 11rem;
-  }
-
-  .xl\:h-36{
-    height: 9rem;
-  }
-
-  .xl\:h-screen{
-    height: 100vh;
-  }
-
-  .xl\:pb-0{
-    padding-bottom: 0px;
   }
 
   .xl\:text-7xl{

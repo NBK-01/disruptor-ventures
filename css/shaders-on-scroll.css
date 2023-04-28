@@ -52,7 +52,7 @@ z-index: 0; }
   width: 100vw;
   min-height: calc(100vh - 7rem);
   padding-bottom: 120px; 
-z-index: -100;
+  z-index: -100;
 }
 
   @media (max-width: 64em) {
@@ -60,7 +60,7 @@ z-index: -100;
       flex-direction: column;
       justify-content: center;
       min-height: 100vh;
-      padding: 100vh 2rem; }
+      padding: 1vh 2rem; }
       .section:first-of-type {
         gap: 0; } }
   .section:not(:first-of-type) .section__title {
