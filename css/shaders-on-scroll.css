@@ -60,7 +60,7 @@ z-index: 0; }
       flex-direction: column;
       justify-content: center;
       min-height: 100vh;
-      padding: 1vh 2rem; }
+      padding: 0vh 2rem; }
       .section:first-of-type {
         gap: 0; } }
   .section:not(:first-of-type) .section__title {
