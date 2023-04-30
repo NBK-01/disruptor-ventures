@@ -1,9 +1,8 @@
 // List of sentences
 var _CONTENT = [
-  "financial models",
-  "business plans",
-  "pitch decks",
-  "market research",
+  "Market",
+  "Investors",
+  "Growth",
 ];
 
 // Current sentence being processed

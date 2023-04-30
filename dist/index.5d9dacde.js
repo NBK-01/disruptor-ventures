@@ -559,10 +559,9 @@ function hmrAccept(bundle, id) {
 },{}],"1Z4Rq":[function(require,module,exports) {
 // List of sentences
 var _CONTENT = [
-    "financial models",
-    "business plans",
-    "pitch decks",
-    "market research"
+    "Market",
+    "Investors",
+    "Growth"
 ];
 // Current sentence being processed
 var _PART = 0;
