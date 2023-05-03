@@ -597,10 +597,6 @@ img, video {
   height: .25rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-24 {
   height: 6rem;
 }
@@ -1753,6 +1749,16 @@ img, video {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1766,16 +1772,6 @@ img, video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .text-8xl {
@@ -2281,6 +2277,10 @@ img, video {
     }
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:px-3 {
     padding-left: .75rem;
     padding-right: .75rem;
@@ -2297,6 +2297,14 @@ img, video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:h-36 {
     height: 9rem;
   }
@@ -2326,12 +2334,21 @@ img, video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
   .xl\:mt-44 {
     margin-top: 11rem;
   }
 
   .xl\:text-left {
     text-align: left;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
